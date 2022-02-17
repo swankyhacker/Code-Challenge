@@ -1,29 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>Fancy Form</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+  <link rel="stylesheet" href="./style.css">
 
-  <!-- You may add more stuff here -->
-  <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
+  <script src="./script.js"></script>
+  <div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h6 class="mb-0 pb-3"><span>Fancy Form</span></h6>
+            <label for="reg-log"></label>
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Transaction</h4>
+                      <div id="address-group" class="form-group">
+                        <input type="text" name="logname" class="form-style" placeholder="ETH Address" id="address"
+                          autocomplete="off">
+                        <i class="input-icon uil uil-user"></i>
+                      </div>
+                      <div id="amount-group" class="form-group mt-2">
+                        <input type="number" name="logemail" class="form-style" placeholder="Amount to send"
+                          id="ethAmount" autocomplete="off">
+                        <i class="input-icon uil uil-dollar-alt"></i>
+                      </div>
+                      <div id="otp-group" class="form-group mt-2">
+                        <input type="number" name="logpass" class="form-style" placeholder="OTP Authentication" id="otp"
+                          autocomplete="off">
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                      <a href="#" id='submit' class="btn mt-4">submit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
-  <form onsubmit="return !1">
-    <label for="input-address">ETH Address</label>
-    <input id="input-address" />
-
-    <label for="input-amount">Amount to send</label>
-    <input id="input-amount" />
-
-    <label for="input-otp">OTP Authentication</label>
-    <input type="number" id="input-otp" />
-
-    <button>SEND TOKENS</button>
-  </form>
-  <script src="script.js"></script>
 </body>
 
 </html>
